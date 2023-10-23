@@ -10,7 +10,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  color: #fff;
 }
 html {
   overflow-y: scroll;
@@ -20,6 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
+  min-height: 3500px;
 }
 
 /* Navbar */
@@ -89,10 +89,17 @@ body {
   top: 100%;
   right: 7%;
   background-color: #fff;
-  width: 50rem;
-  height: 5rem;
+  width: 35rem;
+  height: 3rem;
   display: flex;
   align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
 }
 .navbar .search-form input {
   height: 100%;
@@ -103,7 +110,7 @@ body {
 }
 .navbar .search-form label {
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-right: 1rem;
   color: var(--bg);
 }
@@ -163,19 +170,22 @@ body {
 
 /* about section */
 .about,
-.contact {
+.contact,
+.promo {
   padding: 6rem 7% 10rem;
 }
 
 .about h2,
-.contact h2 {
+.contact h2,
+.promo h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .about h2 span,
-.contact h2 span {
+.contact h2 span,
+.promo h2 span {
   color: var(--primary);
 }
 .about .row {
@@ -185,13 +195,12 @@ body {
 .about .row .about-img {
   flex: 1 1 45rem;
 }
-
 .about .about-img img {
   width: 100%;
 }
 
 .about .row .content {
-  flex: 1 1 35rem;
+  flex: 1 1 45rem;
   padding: 0 1rem;
 }
 .about .row .content h3 {
@@ -204,10 +213,63 @@ body {
   font-weight: 100;
   line-height: 1.6;
 }
-.contact h2 {
-  margin-bottom: 1rem;
+.promo .rowpromo {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
 }
-.contact p {
+.promo .promo-card {
+  text-align: center;
+  border: 1px solid #c0c0c0;
+  padding: 2rem;
+}
+.promo .promo-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.promo .promo-icons a {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo .promo-icons a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.promo .promo-image {
+  padding: 1rem 0;
+}
+.promo .promo-image img {
+  height: 25rem;
+}
+.promo .rowpromo .promo-content p {
+  line-height: 1.6;
+}
+.promo .promo-content h3 {
+  font-size: 1.5rem;
+}
+.promo .promo-price p {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #666;
+  line-height: 3;
+}
+.promo .promo-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.contact p,
+.promo p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -268,8 +330,14 @@ footer .social {
 
 footer .social a,
 footer .link a {
+  color: #fff;
   margin-left: 1rem;
 }
+footer .social a:hover,
+footer .link a:hover {
+  color: var(--primary);
+}
+
 footer .link {
   margin-bottom: 1.4rem;
 }
@@ -335,7 +403,13 @@ footer .credit a {
     object-fit: cover;
     object-position: center;
   }
-
+  .navbar .search-form {
+    width: 70%;
+    right: 2rem;
+  }
+  .promo .rowpromo {
+    flex-wrap: wrap;
+  }
   .contact .row {
     flex-wrap: wrap;
   }
