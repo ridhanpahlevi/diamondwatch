@@ -170,13 +170,13 @@ body {
 /* about section */
 .about,
 .contact,
-.product {
+.promo {
   padding: 6rem 7% 10rem;
 }
 
 .about h2,
 .contact h2,
-.product h2 {
+.promo h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -184,7 +184,7 @@ body {
 
 .about h2 span,
 .contact h2 span,
-.product h2 span {
+.promo h2 span {
   color: var(--primary);
 }
 .about .row {
@@ -337,7 +337,7 @@ body {
   }
 }
 .contact p,
-.product p {
+.promo p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
