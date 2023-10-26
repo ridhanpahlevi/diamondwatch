@@ -109,7 +109,51 @@ body {
   margin-right: 1rem;
   color: var(--bg);
 }
+.navbar2 {
+  display: flex;
+  background-color: #fff;
+}
+.slides {
+  width: 720px;
+  top: 20%;
+  left: 7%;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.slide {
+  display: flex;
+  animation: slide 10s infinite;
+}
+.slide img {
+  width: 100%;
+  cursor: pointer;
+}
 
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  60% {
+    transform: translateX(-400%);
+  }
+  70% {
+    transform: translateX(0);
+  }
+}
 /* 
 footer {
   background-color: #364f63;
@@ -164,6 +208,9 @@ footer .credit a {
   .navbar .search-form {
     width: 70%;
     right: 2rem;
+  }
+  .wraper {
+    width: 70%;
   }
 
   /* mobilephone */
