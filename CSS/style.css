@@ -488,6 +488,19 @@ footer .credit a {
   .contact .row form {
     padding-top: 0;
   }
+  .slides {
+    flex-wrap: wrap;
+  }
+  .slides .slide img {
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .sideslide img {
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 /* mobilephone */
 @media (max-width: 450px) {
