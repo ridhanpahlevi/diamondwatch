@@ -170,13 +170,15 @@ body {
 /* about section */
 .about,
 .contact,
-.promo {
+.promo,
+.product {
   padding: 6rem 7% 10rem;
 }
 
 .about h2,
 .contact h2,
-.promo h2 {
+.promo h2,
+.product {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -336,6 +338,79 @@ body {
     transform: translateX(-100%);
   }
 }
+.terbaru {
+  text-align: left;
+  margin-top: 30px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.terbaru a {
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.product .rowpromo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.product .promo-card {
+  text-align: center;
+  background-color: rgba(24, 24, 24);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 8px;
+}
+.product .promo-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.product .promo-icons a {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .promo-icons a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.product .promo-image {
+  padding: 1rem 0;
+}
+.product .promo-image img {
+  height: 12rem;
+}
+.product .rowpromo .promo-content p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+.product .promo-content h3 {
+  font-size: 1.5rem;
+}
+.product .promo-price p {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #666;
+  line-height: 3;
+}
+.product .promo-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .contact p,
 .promo p {
   text-align: center;
@@ -491,14 +566,10 @@ footer .credit a {
     flex-wrap: wrap;
   }
   .slides .slide img {
-    height: 280px;
-    object-fit: cover;
-    object-position: center;
+    height: 320px;
   }
   .sideslide img {
-    height: auto;
-    object-fit: cover;
-    object-position: center;
+    height: 30rem;
   }
 }
 /* mobilephone */
