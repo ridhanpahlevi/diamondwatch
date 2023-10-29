@@ -276,27 +276,31 @@ body {
   display: flex;
 }
 .slide {
-  width: 900px;
-  height: 450px;
+  width: 100%;
   overflow: hidden;
   display: flex;
   border-radius: 5px;
 }
 
 .slide img {
-  width: 100%;
+  height: auto;
+  max-width: 100%;
   animation: slide 15s infinite;
   display: flex;
   border-radius: 5px;
   cursor: pointer;
   object-fit: cover;
 }
+.sideslide {
+  border-radius: 5px;
+}
 .sideslide .bonus img {
   width: 100%;
+  height: auto;
   display: flex;
   border-radius: 5px;
   cursor: pointer;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 .sideslide .bonus .point {
   padding-left: 10px;
@@ -352,30 +356,34 @@ body {
   font-weight: 300;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.product .rowpromo {
+.product .rowproduct {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: 1.5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
-.product .promo-card {
+.product .product-card {
   text-align: center;
   background-color: rgba(24, 24, 24);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 8px;
+  cursor: pointer;
 }
-.product .promo-icons {
-  display: flex;
+.product .product-icons {
+  display: inline-block;
+  position: relative;
   justify-content: center;
   gap: 0.3rem;
+  bottom: 1rem;
+  left: 5.5rem;
 }
-.product .promo-icons a {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #fff;
+.product .product-icons a {
+  width: 1.7rem;
+  height: 1.7rem;
+  color: rgb(246, 133, 34);
   margin: 0.3rem;
   border: 1px solid #666;
   border-radius: 50%;
@@ -383,33 +391,62 @@ body {
   justify-content: center;
   align-items: center;
 }
-.product .promo-icons a:hover {
+.product .product-icons a:hover {
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
-.product .promo-image {
+.product .product-image {
+  max-width: 100%;
   padding: 1rem 0;
+  margin-bottom: -5rem;
+  display: inline-block;
+  position: relative;
 }
-.product .promo-image img {
+.product .product-image p {
+  display: inline-block;
+  position: relative;
+  bottom: 16rem;
+  right: 3rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: rgba(54, 79, 99, 0.5);
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.product .product-image img {
   height: 12rem;
 }
-.product .rowpromo .promo-content p {
-  line-height: 1.6;
-  font-size: 1rem;
+.product .rowproduct .product-content p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 0.7rem;
 }
-.product .promo-content h3 {
-  font-size: 1.5rem;
-}
-.product .promo-price p {
+
+.product .product-price span {
   text-decoration: line-through;
   font-weight: lighter;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666;
-  line-height: 3;
 }
-.product .promo-price {
-  font-size: 1.3rem;
+.product .product-price .price {
+  text-align: left;
+  font-size: 1.2rem;
   font-weight: bold;
+  line-height: 1rem;
+  color: rgb(246, 133, 34);
+}
+.product-price a {
+  position: relative;
+  display: inline-block;
+  left: 5.5rem;
+  top: 0.5rem;
+  font-size: 5px;
+  font-weight: 100;
+  color: rgb(246, 133, 34);
 }
 .contact p,
 .promo p {
@@ -567,9 +604,11 @@ footer .credit a {
   }
   .slides .slide img {
     height: 320px;
+    object-fit: scale-down;
   }
   .sideslide img {
     height: 30rem;
+    object-fit: scale-down;
   }
 }
 /* mobilephone */
