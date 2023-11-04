@@ -215,62 +215,62 @@ body {
   line-height: 1.6;
 }
 /* 
-.promo .rowpromo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem;
-}
-.promo .promo-card {
-  text-align: center;
-  background-color: #222;
-  padding: 1rem;
-}
-.promo .promo-icons {
-  display: flex;
-  justify-content: center;
-  gap: 0.3rem;
-}
-.promo .promo-icons a {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #fff;
-  margin: 0.3rem;
-  border: 1px solid #666;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.promo .promo-icons a:hover {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
-}
-.promo .promo-image {
-  padding: 1rem 0;
-}
-.promo .promo-image img {
-  height: 10rem;
-}
-.promo .rowpromo .promo-content p {
-  line-height: 1.6;
-}
-.promo .promo-content h3 {
-  font-size: 1.5rem;
-}
-.promo .promo-price p {
-  text-decoration: line-through;
-  font-weight: lighter;
-  font-size: 1rem;
-  color: #666;
-  line-height: 3;
-}
-.promo .promo-price {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
- */
+  .promo .rowpromo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  .promo .promo-card {
+    text-align: center;
+    background-color: #222;
+    padding: 1rem;
+  }
+  .promo .promo-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  .promo .promo-icons a {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo .promo-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  .promo .promo-image {
+    padding: 1rem 0;
+  }
+  .promo .promo-image img {
+    height: 10rem;
+  }
+  .promo .rowpromo .promo-content p {
+    line-height: 1.6;
+  }
+  .promo .promo-content h3 {
+    font-size: 1.5rem;
+  }
+  .promo .promo-price p {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #666;
+    line-height: 3;
+  }
+  .promo .promo-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+   */
 .slides {
   margin-top: 4rem;
   display: flex;
@@ -371,16 +371,40 @@ body {
 .product .product-card {
   text-align: center;
   background-color: rgba(24, 24, 24);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 10px;
+  border-radius: 8px;
+  cursor: pointer;
 }
-
+.product .product-icons {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  gap: 0.3rem;
+  bottom: 1rem;
+  left: 5.5rem;
+}
+.product .product-icons a {
+  width: 1.7rem;
+  height: 1.7rem;
+  color: rgb(246, 133, 34);
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .product-icons a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
 .product .product-image {
   max-width: 100%;
   padding: 1rem 0;
+  margin-bottom: -5rem;
   display: inline-block;
   position: relative;
 }
@@ -402,12 +426,10 @@ body {
   height: 12rem;
 }
 .product .rowproduct .product-content p {
-  display: flex;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
-  margin-bottom: 1rem;
-  color: #fff;
+  margin-bottom: 0.7rem;
 }
 
 .product .product-price span {
@@ -418,7 +440,7 @@ body {
 }
 .product .product-price .price {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   line-height: 1rem;
   color: rgb(246, 133, 34);
@@ -426,8 +448,8 @@ body {
 .product-price a {
   position: relative;
   display: inline-block;
-  right: 2.4rem;
-  top: 0rem;
+  left: 5.5rem;
+  top: 0.5rem;
   font-size: 5px;
   font-weight: 100;
   color: rgb(246, 133, 34);
@@ -572,7 +594,8 @@ footer .credit a {
     width: 70%;
     right: 2rem;
   }
-  .product .rowproduct .product-content p {
+  .product .slides {
+    flex-wrap: wrap;
   }
   .contact .row {
     flex-wrap: wrap;
