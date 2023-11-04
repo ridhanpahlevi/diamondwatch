@@ -284,7 +284,7 @@ body {
 
 .slide img {
   height: auto;
-  max-width: 100%;
+  width: 900px;
   animation: slide 15s infinite;
   display: flex;
   border-radius: 5px;
@@ -340,6 +340,12 @@ body {
   }
   80% {
     transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 .terbaru {
@@ -604,11 +610,11 @@ footer .credit a {
     flex-wrap: wrap;
   }
   .slides .slide img {
-    height: 320px;
-    object-fit: scale-down;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
   .sideslide img {
-    height: 30rem;
+    max-width: 100%;
     object-fit: scale-down;
   }
 }
