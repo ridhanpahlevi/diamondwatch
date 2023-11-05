@@ -385,10 +385,10 @@ body {
   position: relative;
 }
 .product .product-image p {
-  display: inline-block;
-  position: relative;
-  bottom: 16rem;
-  right: 3rem;
+  position: absolute;
+
+  bottom: 13rem;
+  left: -1.5rem;
   padding: 0.2rem 0.5rem;
   font-size: 0.8rem;
   color: #ffffff;
@@ -572,7 +572,7 @@ footer .credit a {
     width: 70%;
     right: 2rem;
   }
-  .product .rowproduct .product-content p {
+  .product .rowproduct {
   }
   .contact .row {
     flex-wrap: wrap;
