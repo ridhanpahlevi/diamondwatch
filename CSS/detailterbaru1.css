@@ -115,13 +115,19 @@ body {
   color: var(--bg);
 }
 .container {
+  max-width: 2000px;
+  margin: auto;
   display: flex;
   padding: 6rem 7%;
+  justify-content: space-between;
 }
 .content-slide {
+  width: 35%;
   position: relative;
   margin-bottom: 100px;
+  margin-right: 40px;
 }
+
 .imgslide {
   display: block;
   width: 100%;
@@ -162,7 +168,9 @@ img {
   font-size: 12px;
 }
 .row {
-  margin-left: 4.5rem;
+  width: 65%;
+
+  box-sizing: border-box;
 }
 .row h2 {
   font-weight: 900;
@@ -291,10 +299,10 @@ img {
   background-color: #3b3a3a;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 73px;
-  padding-left: 33px;
+  width: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-sizing: border-box;
 }
 .limitediskon span {
   font-size: 15px;
@@ -305,11 +313,10 @@ img {
   color: #999696;
 }
 .limitediskon .doted {
-  position: relative;
-  top: 13px;
-  color: #010101;
+  position: fixed;
+
+  color: #ebe7e7;
   font-size: 35px;
-  left: 81px;
 }
 footer {
   background-color: #364f63;
@@ -357,7 +364,7 @@ footer .credit a {
 /* tablet */
 @media (max-width: 758px) {
   html {
-    font-size: 62.5%;
+    font-size: 70.5%;
   }
   #hamburger-menu {
     display: inline-block;
@@ -402,11 +409,12 @@ footer .credit a {
     top: 70%;
   }
   .row {
-    margin-top: 7rem;
-    margin-left: 0;
+    margin-top: 10rem;
+    width: 100%;
   }
-  .content {
-    margin-right: 5rem;
+  .content-slide {
+    width: 100%;
+    margin-right: 0;
   }
 
   .fade {
