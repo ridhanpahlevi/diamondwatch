@@ -18,8 +18,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #fff;
   max-height: 90000px;
+  color: #fff;
 }
 
 /* Navbar */
@@ -114,7 +114,6 @@ body {
   margin-right: 1rem;
   color: var(--bg);
 }
-
 .container {
   display: flex;
   padding: 6rem 7%;
@@ -356,9 +355,9 @@ footer .credit a {
   }
 }
 /* tablet */
-@media (max-width: 800px) {
+@media (max-width: 758px) {
   html {
-    font-size: 70.5%;
+    font-size: 62.5%;
   }
   #hamburger-menu {
     display: inline-block;

@@ -18,6 +18,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
+  max-height: 90000px;
   color: #fff;
 }
 
