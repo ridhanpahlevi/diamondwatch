@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIAMONDWATCH</title>
+    <link rel="icon" href="img/icon/icon.png" type="image/x-icon" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="CSS/detailterbaru2.css" />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"
+        >DiamondWatch <br /><span>premium watch only</span></a
+      >
+      <div class="navbar-nav">
+        <a href="index.html#home">Home&emsp;</a>
+        <a href="index.html#about">About&emsp;</a>
+        <a href="index.html#promo">Promo&emsp;</a>
+        <a href="index.html#product">Product&emsp;</a>
+        <a href="index.html#contact">Contact&emsp;</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="userlogin.html" id="user"><i data-feather="user"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="content-slide">
+          <div class="imgslide fade">
+            <div class="numberslide">1 / 4</div>
+            <img
+              class="img1"
+              src="img/detailproduct/av-4052/AV-4052-R1_1l.jpg"
+              alt=""
+            />
+          </div>
+          <div class="imgslide">
+            <div class="numberslide">2 / 4</div>
+            <img
+              src="img/detailproduct/av-4052/images_product_avi-8_AV-4052-R1_DETAIL.jpg"
+              alt=""
+            />
+          </div>
+          <div class="imgslide">
+            <div class="numberslide">3 / 4</div>
+            <img
+              src="img/detailproduct/av-4052/images_product_avi-8_AV-4052-R1_DETAIL1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="imgslide">
+            <div class="numberslide">4 / 4</div>
+            <img
+              src="img/detailproduct/av-4052/images_product_avi-8_AV-4052-R1_DETAIL3.jpg"
+              alt=""
+            />
+          </div>
+          <a class="prev" onclick="nextslide (-1)">&#10094;</a>
+          <a class="next" onclick="nextslide (1)">&#10095;</a>
+        </div>
+        <!-- <div class="row">
+          <div class="content">
+            <h2>AVI-8 Hawker Hunter</h2>
+            <h3>
+              AVI-8 Hawker Hunter AV-4052-R1 Retrograde Chronograph Tactical
+              Black Dial Black Rubber Strap
+            </h3>
+          </div>
+          <div class="rowterjual"><p>Dilihat 200 &#9679; Terjual 0</p></div>
+          <div class="diskon">
+            <p class="normal">2.800.000</p>
+            <p class="diskonnormal">-20%</p>
+            <p class="hemat">Kamu hemat Rp560.000,-</p>
+          </div>
+          <div class="harga">
+            <h1>Rp2.240.000,-</h1>
+          </div>
+          <div class="stock">
+            <span class="minus">-</span>
+            <span class="num">1</span>
+            <span class="plus">+</span>
+          </div>
+          <div class="checkout">
+            <button class="keranjang">+ Keranjang</button>
+            <button class="beli">Beli Sekarang</button>
+          </div>
+          <div class="voucher">
+            <p>Voucher</p>
+          </div>
+          <div class="voucherdiskon">
+            <div class="limited">
+              <img src="img/detailproduct/diskon/discount-coupon.png" alt="" />
+            </div>
+            <div class="limitediskon">
+              <span>Limited [Discount] 1.100RB</span
+              ><span class="doted">&#9679;</span>
+              <p class="potongan">Potongan s.d. Rp1.100.000</p>
+            </div>
+            <div class="all">
+              <img src="img/detailproduct/diskon/discount-coupon.png" alt="" />
+            </div>
+            <div class="limitediskon">
+              <span>Limited [Discount] 1.100RB</span
+              ><span class="doted">&#9679;</span>
+              <p class="potongan">Potongan s.d. Rp1.100.000</p>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </section>
+    <!--
+    <footer>
+      <div class="social">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="link">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#promo">Promo</a>
+        <a href="index.html#product">Product</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Ridhan Pahlevi</a>.︱ &copy; 2023.</p>
+      </div>
+    </footer>-->
+    <script>
+      feather.replace();
+    </script>
+    <!-- javascript -->
+    <script src="js/detailterbaru.js"></script>
+  </body>
+</html>
