@@ -273,7 +273,6 @@ img {
 }
 .voucherdiskon {
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .limited,
@@ -314,7 +313,6 @@ img {
 }
 .limitediskon .doted {
   position: fixed;
-
   color: #ebe7e7;
   font-size: 35px;
 }
@@ -416,7 +414,9 @@ footer .credit a {
     width: 100%;
     margin-right: 0;
   }
-
+  .voucherdiskon {
+    flex-wrap: nowrap;
+  }
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
