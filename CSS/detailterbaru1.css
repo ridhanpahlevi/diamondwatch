@@ -114,31 +114,33 @@ body {
   margin-right: 1rem;
   color: var(--bg);
 }
+
 .container {
   display: flex;
   padding: 6rem 7%;
-  flex: 1 1 45rem;
 }
 .content-slide {
-  display: inline-block;
   position: relative;
   margin-bottom: 100px;
 }
 .imgslide {
-  width: 50%;
-  height: 400px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 img {
+  vertical-align: middle;
   border-radius: 30px;
-  width: 480px;
+  width: 100%;
+  height: auto;
   border: 2px solid #364f63;
 }
 
-.prev {
+.prev,
+.next {
   cursor: pointer;
-  position: relative;
-  top: -5rem;
-  left: 2px;
+  position: absolute;
+  top: 45%;
   width: auto;
   padding: 16px;
   color: rgb(255, 254, 224);
@@ -148,19 +150,9 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .next {
-  cursor: pointer;
-  position: relative;
-  top: -5rem;
-  left: 394px;
-  width: auto;
-  padding: 16px;
-  color: rgb(255, 254, 224);
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-
 .prev:hover,
 .next:hover {
   background-color: rgba(255, 255, 255, 0.8);
@@ -171,18 +163,18 @@ img {
   font-size: 12px;
 }
 .row {
-  margin-left: 5rem;
+  margin-left: 4.5rem;
 }
 .row h2 {
   font-weight: 900;
   line-height: 4rem;
 }
+
 .rowterjual {
   color: #999696;
   margin-top: 10px;
   border-bottom: 1px dashed #6b6a6a;
   border-top: 1px dashed #6b6a6a;
-
   line-height: 3rem;
 }
 .diskon {
@@ -404,38 +396,31 @@ footer .credit a {
   }
 
   .imgslide img {
-    max-height: 50rem;
+    margin-bottom: -180px;
   }
-  .next {
-    border-radius: 3px 0 0 3px;
-    position: relative;
-    left: 401px;
-    top: -150px;
-  }
-
+  .next,
   .prev {
-    border-radius: 3px 0 0 3px;
-    position: relative;
-    top: -150px;
-    left: 2px;
+    top: 70%;
   }
   .row {
     margin-top: 7rem;
-    margin-left: -0.5rem;
+    margin-left: 0;
   }
-  .voucher span a {
-    margin-left: 45rem;
+  .content {
+    margin-right: 5rem;
   }
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-/* mobilephone */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  /* mobilephone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
   }
 }
